@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import linkedin from "../../../public/linkedin.png";
+import linkedin from "../../../public/linkedIn.png";
 import instagram from "../../../public/instagram.png";
 import github from "../../../public/github.png";
 import { motion } from "framer-motion";
