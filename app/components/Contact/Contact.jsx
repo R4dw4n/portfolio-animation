@@ -7,7 +7,7 @@ import PhoneSVG from "./PhoneSVG";
 
 const contactVariants = {
   initial: {
-    y: 500,
+    y: 300,
     opacity: 0,
   },
   animate: {
@@ -101,7 +101,7 @@ function Contact() {
       variants={contactVariants}
       initial="initial"
       animate={inView ? "animate" : "initial"}
-      className="h-full w-full p-4 md:p-0 md:max-w-[65%] m-auto flex flex-col md:flex-row items-center gap-5 md:gap-12"
+      className="h-screen w-full p-4 md:p-0 md:max-w-[65%] m-auto flex flex-col md:flex-row items-center gap-5 md:gap-12"
     >
       <motion.div className="flex-[1] flex flex-col gap-5 md:gap-10 text-center md:text-left items-center md:items-stretch">
         <motion.h1 variants={contactVariants} className="text-4xl md:text-8xl">

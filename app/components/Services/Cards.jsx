@@ -30,7 +30,7 @@ function Cards() {
     },
   ];
   return (
-    <motion.ul variants={servicesVariants} className="flex-[2] flex flex-col md:flex-row w-full md:w-auto md:max-w-[65%] m-auto">
+    <motion.ul variants={servicesVariants} className="flex-[2] flex flex-col flex-wrap md:flex-row w-full h-1/3 md:h-auto lg:w-auto lg:max-w-[65%] m-auto items-center md:items-stretch">
       {cardsList.map((item, ind) => (
         <CardItem key={ind} item={item} />
       ))}

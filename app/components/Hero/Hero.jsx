@@ -116,11 +116,11 @@ function Hero() {
         Experienced Programmer
       </motion.div>
       <motion.div
-        className="absolute top-unset bottom-0 md:top-0 md:bottom-unset right-0 h-1/2 md:h-full"
+        className="absolute w-1/2 top-unset bottom-0 lg:top-[-140px] md:bottom-unset right-0 h-1/2 md:h-full lg:h-[150%]"
         variants={heroVariants}
         animate={inView ? "animate" : "initial"}
       >
-        <Image src={hero} alt="me" className="w-full h-full object-cover"/>
+        <Image src={hero} alt="me" className="w-full h-full"/>
       </motion.div>
     </div>
   );
