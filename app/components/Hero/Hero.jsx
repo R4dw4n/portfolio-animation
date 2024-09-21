@@ -5,6 +5,7 @@ import hero from "../../../public/hero.png";
 import scrollImg from "../../../public/scroll.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const textVariants = {
   initial: {
@@ -88,19 +89,23 @@ function Hero() {
             Frontend Web Developer
           </motion.h1>
           <motion.div variants={textVariants}>
-            <motion.button
-              variants={textVariants}
-              animate={inView ? "animate" : "initial"}
-              className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
-            >
-              See The Latest Work
-            </motion.button>
-            <motion.button
-              variants={textVariants}
-              className="p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
-            >
-              Contact Me
-            </motion.button>
+            <Link href="#Portfolio">
+              <motion.button
+                variants={textVariants}
+                animate={inView ? "animate" : "initial"}
+                className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
+                >
+                See The Latest Work
+              </motion.button>
+            </Link>
+            <Link href="#Contact">
+              <motion.button
+                variants={textVariants}
+                className="p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
+              >
+                Contact Me
+              </motion.button>
+            </Link>
           </motion.div>
           <motion.div variants={textVariants} animate="scrollButton">
             <Image src={scrollImg} width={50} alt="scroll" />

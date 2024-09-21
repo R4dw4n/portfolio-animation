@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import facebook from "../../../public/facebook.png";
+import linkedin from "../../../public/linkedin.png";
 import instagram from "../../../public/instagram.png";
-import youtube from "../../../public/youtube.png";
-import dribbble from "../../../public/dribbble.png";
+import github from "../../../public/github.png";
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar/Sidebar";
 // const Sidebar = lazy(() => import('./Sidebar/Sidebar'));
@@ -26,24 +25,22 @@ export const staggerFadeVariant = {
 function Navbar() {
   const navlinkimages = [
     {
-      alt: "facebook",
-      src: facebook,
-      to: "#",
+      alt: "linkedin",
+      src: linkedin,
+      to: "https://www.linkedin.com/in/radwan-al-kheder-64047a297/",
+      width: 18,
     },
     {
       alt: "instagram",
       src: instagram,
-      to: "#",
+      to: "https://www.instagram.com/notradw4n/",
+      width: 18,
     },
     {
-      alt: "youtube",
-      src: youtube,
-      to: "#",
-    },
-    {
-      alt: "dribbble",
-      src: dribbble,
-      to: "#",
+      alt: "github",
+      src: github,
+      to: "https://github.com/R4dw4n",
+      width: 20,
     },
   ];
 
@@ -71,7 +68,7 @@ function Navbar() {
               custom={ind}
             >
               <motion.a href={item.to}>
-                <Image height={18} width={18} alt={item.alt} src={item.src} priority/>
+                <Image height={22} width={item.width} alt={item.alt} src={item.src} priority/>
               </motion.a>
             </motion.li>
           ))}
