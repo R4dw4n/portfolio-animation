@@ -77,7 +77,7 @@ function Hero() {
           <motion.h2
             variants={textVariants}
             animate={inView ? "animate" : "initial"}
-            className="text-xl md:text-3xl text-[#663399] tracking-[5px]"
+            className="text-xl md:text-3xl text-[#8d40da] tracking-[5px] font-bold"
           >
             Radwan Al-Kheder
           </motion.h2>
@@ -93,7 +93,7 @@ function Hero() {
               <motion.button
                 variants={textVariants}
                 animate={inView ? "animate" : "initial"}
-                className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
+                className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white hover:border-[#ccc5c7] hover:text-[#ccc5c7] relative z-10"
                 >
                 See The Latest Work
               </motion.button>
@@ -101,7 +101,7 @@ function Hero() {
             <Link href="#Contact">
               <motion.button
                 variants={textVariants}
-                className="p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white"
+                className="p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white hover:border-[#ccc5c7] hover:text-[#ccc5c7] relative z-10"
               >
                 Contact Me
               </motion.button>
@@ -116,7 +116,7 @@ function Hero() {
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="absolute w-1/2 font-bold text-[50vh] bottom-[-120px] whitespace-nowrap text-[#ffffff09]"
+        className="absolute w-1/2 font-bold text-[50vh] bottom-[-120px] whitespace-nowrap text-[#ffffff09] select-none"
       >
         Experienced Programmer
       </motion.div>

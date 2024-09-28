@@ -29,18 +29,21 @@ function Navbar() {
       src: linkedin,
       to: "https://www.linkedin.com/in/radwan-al-kheder-64047a297/",
       width: 18,
+      className: "",
     },
     {
       alt: "instagram",
       src: instagram,
       to: "https://www.instagram.com/notradw4n/",
       width: 18,
+      className: "",
     },
     {
       alt: "github",
       src: github,
       to: "https://github.com/R4dw4n",
-      width: 20,
+      width: 18,
+      className: "mb-2",
     },
   ];
 
@@ -68,7 +71,7 @@ function Navbar() {
               custom={ind}
             >
               <motion.a href={item.to}>
-                <Image height={22} width={item.width} alt={item.alt} src={item.src} priority/>
+                <Image height={18} width={item.width} alt={item.alt} src={item.src} priority />
               </motion.a>
             </motion.li>
           ))}
