@@ -4,7 +4,7 @@ import { servicesVariants } from './Services'
 
 function TopText() {
   return (
-    <motion.div variants={servicesVariants} className='flex flex-col md:flex-row items-center gap-[20px] flex-[1] text-center self-center md:self-end'>
+    <motion.div variants={servicesVariants} className='mt-4 lg:mt-0 flex flex-col md:flex-row items-center gap-[20px] flex-[1] text-center self-center md:self-end'>
       <motion.p className='font-[200] text-base text-gray text-right'>
         focus on growing your company
         <br /> and move forward!

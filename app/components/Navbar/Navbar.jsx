@@ -27,7 +27,7 @@ function Navbar() {
     {
       alt: "linkedin",
       src: linkedin,
-      to: "https://www.linkedin.com/in/radwan-al-kheder-64047a297/",
+      to: "https://www.linkedin.com/in/radwan-al-kheder-735107403",
       width: 18,
       className: "",
     },
@@ -47,12 +47,12 @@ function Navbar() {
     },
   ];
 
-  return ( 
+  return (
     <div className="h-[100px]">
       {/* SIDEBAR */}
       <Sidebar />
 
-      <div className="max-w-[65%] h-full m-auto flex items-center justify-end md:justify-between">
+      <div className="max-w-[75%] h-full m-auto flex items-center justify-end md:justify-between">
         <motion.span
           className="font-bold hidden md:block"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -71,7 +71,13 @@ function Navbar() {
               custom={ind}
             >
               <motion.a href={item.to}>
-                <Image height={18} width={item.width} alt={item.alt} src={item.src} priority />
+                <Image
+                  height={18}
+                  width={item.width}
+                  alt={item.alt}
+                  src={item.src}
+                  priority
+                />
               </motion.a>
             </motion.li>
           ))}

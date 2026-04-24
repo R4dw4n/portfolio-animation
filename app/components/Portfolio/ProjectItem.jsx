@@ -13,10 +13,10 @@ function ProjectItem({ item }) {
   return (
     <motion.section>
       <div className="flex items-center justify-center w-full h-full overflow-hidden">
-        <div className="h-full m-auto md:max-w-[75%] flex flex-col md:flex-row justify-center items-center gap-12">
+        <div className="h-full m-auto px-8 sm:px-20 md:px-0 md:max-w-[75%] flex flex-col md:flex-row justify-center items-center gap-2 md:gap-12">
           <motion.div
             ref={ref}
-            className="relative overflow-hidden flex-[1] h-1/2 w-full md:w-unset max-h-[300px] md:max-h-none"
+            className="relative flex items-center overflow-hidden flex-[1] h-1/2 w-full max-h-fit md:max-h-none"
           >
             <Link href={item.url || "/"}>
               <Image alt={item.title} src={item.img} width={500} height={500} />

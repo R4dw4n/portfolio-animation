@@ -67,7 +67,7 @@ function Hero() {
       ref={ref}
       className="relative h-100vh_100px overflow-hidden bg-gradient-to-b from-[var(--dark-background)] to-[#111132]"
     >
-      <div className="max-w-[65%] h-full m-auto">
+      <div className="max-w-[75%] h-full m-auto flex justify-between flex-wrap gap-4">
         <motion.div
           initial="initial"
           animate={inView ? "animate" : "initial"}
@@ -94,7 +94,7 @@ function Hero() {
                 variants={textVariants}
                 animate={inView ? "animate" : "initial"}
                 className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white hover:border-[#ccc5c7] hover:text-[#ccc5c7] relative z-10"
-                >
+              >
                 See The Latest Work
               </motion.button>
             </Link>
@@ -111,6 +111,13 @@ function Hero() {
             <Image src={scrollImg} width={50} alt="scroll" />
           </motion.div>
         </motion.div>
+        <motion.div
+          className="flex-1 h-1/2 md:h-full"
+          variants={heroVariants}
+          animate={inView ? "animate" : "initial"}
+        >
+          <Image src={hero} alt="me" className="mx-auto w-[300px] md:w-full h-full md:object-cover md:object-[50%_-38px]" />
+        </motion.div>
       </div>
       <motion.div
         variants={sliderVariants}
@@ -119,13 +126,6 @@ function Hero() {
         className="absolute w-1/2 font-bold text-[50vh] bottom-[-120px] whitespace-nowrap text-[#ffffff09] select-none"
       >
         Experienced Programmer
-      </motion.div>
-      <motion.div
-        className="absolute w-1/2 top-unset bottom-0 lg:top-[-140px] md:bottom-unset right-0 h-1/2 md:h-full lg:h-[150%]"
-        variants={heroVariants}
-        animate={inView ? "animate" : "initial"}
-      >
-        <Image src={hero} alt="me" className="w-full h-full"/>
       </motion.div>
     </div>
   );
