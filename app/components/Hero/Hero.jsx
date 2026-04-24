@@ -65,7 +65,7 @@ function Hero() {
   return (
     <div
       ref={ref}
-      className="relative h-100vh_100px overflow-hidden bg-gradient-to-b from-[var(--dark-background)] to-[#111132]"
+      className="relative h-[calc(100vh-60px)] md:h-100vh_100px overflow-hidden bg-gradient-to-b from-[var(--dark-background)] to-[#111132]"
     >
       <div className="max-w-[75%] h-full m-auto flex justify-between flex-wrap gap-4">
         <motion.div
@@ -77,7 +77,7 @@ function Hero() {
           <motion.h2
             variants={textVariants}
             animate={inView ? "animate" : "initial"}
-            className="text-xl md:text-3xl text-[#8d40da] tracking-[5px] font-bold"
+            className="text-xl md:text-3xl text-[#8d40da] tracking-[5px] font-bold pt-4 md:pt-0"
           >
             Radwan Al-Kheder
           </motion.h2>

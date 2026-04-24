@@ -12,7 +12,7 @@ function ProjectItem({ item }) {
   const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   return (
     <motion.section>
-      <div className="flex items-center justify-center w-full h-full overflow-hidden">
+      <div className="flex items-center justify-center w-full h-full overflow-hidden pt-16 md:pt-0">
         <div className="h-full m-auto px-8 sm:px-20 md:px-0 md:max-w-[75%] flex flex-col md:flex-row justify-center items-center gap-2 md:gap-12">
           <motion.div
             ref={ref}
@@ -30,7 +30,7 @@ function ProjectItem({ item }) {
             </Link>
           </motion.div>
           {/* REMOVE ANIMATION ON MOBILE SCREENS */}
-          <motion.div className="flex-[1] flex md:hidden flex-col gap-8 p-4 items-center">
+          <motion.div className="flex md:hidden flex-col gap-8 p-4 items-center">
             <h2 className="text-3xl">{item.title}</h2>
             <p className="text-sm text-gray">{item.description}</p>
             <Link href={item.url || "/"} className="bg-orange font-[500] text-black border-none rounded-lg p-2 w-[200px] cursor-pointer text-center">

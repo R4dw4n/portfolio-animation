@@ -4,9 +4,9 @@ function ToggleButton({ setIsOpen }) {
   return (
     <button
       onClick={() => setIsOpen((prev) => !prev)}
-      className="cursor-pointer fixed top-6 left-6 w-[50px] h-[50px] border-none rounded-full bg-transparent"
+      className="flex items-center justify-center cursor-pointer fixed top-6 left-6 w-8 h-8 md:w-[50px] md:h-[50px] border-none rounded-full bg-transparent"
     >
-      <svg className="m-auto" width="23" height="23" viewBox="0 0 23 23">
+      <svg className="" width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
           stroke="black"

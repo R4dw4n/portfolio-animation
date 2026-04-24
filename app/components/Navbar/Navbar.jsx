@@ -48,7 +48,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="h-[100px]">
+    <div className="h-[60px] md:h-[100px]">
       {/* SIDEBAR */}
       <Sidebar />
 
