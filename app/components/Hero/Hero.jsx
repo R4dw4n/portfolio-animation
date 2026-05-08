@@ -77,7 +77,7 @@ function Hero() {
           <motion.h2
             variants={textVariants}
             animate={inView ? "animate" : "initial"}
-            className="text-xl md:text-3xl text-[#8d40da] tracking-[5px] font-bold pt-4 md:pt-0"
+            className="text-xl md:text-3xl text-[#8d40da] tracking-[5px] font-bold pt-16 sm:pt-4   md:pt-0"
           >
             Radwan Al-Kheder
           </motion.h2>
@@ -88,12 +88,12 @@ function Hero() {
           >
             Frontend Web Developer
           </motion.h1>
-          <motion.div variants={textVariants}>
+          <motion.div className="flex items-center gap-4 flex-wrap justify-center md:justify-start" variants={textVariants}>
             <Link href="#Portfolio">
               <motion.button
                 variants={textVariants}
                 animate={inView ? "animate" : "initial"}
-                className="mr-0 md:mr-4 p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white hover:border-[#ccc5c7] hover:text-[#ccc5c7] relative z-10"
+                className="p-[10px] font-light cursor-pointer border border-white rounded-[10px] bg-transparent text-white hover:border-[#ccc5c7] hover:text-[#ccc5c7] relative z-10"
               >
                 See The Latest Work
               </motion.button>
